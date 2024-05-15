@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>css_layout_1</title>
+  <style>
+    *{
+      padding: 0px;
+      margin: 0px;
+      box-sizing: border-box;
+    }
+    .container{
+      border: 5px solid black;
+      margin: 5px;
+      height: 95vh;
+      width: 99%;
+    }
+    .header{
+      height: 15%;
+      width: 100%;
+      background-color:cornflowerblue;
+    }
+    .main{
+      height: 70%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .footer{
+      height: 15%;
+      width: 100%;
+      background-color: blue;
+    }
+    .d1{
+      width: 50%;
+      height: 49.5%;
+      margin: 1px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .a1{
+      width: 69.5%;
+      background-color: aqua;
+      height: 100%;
+    }
+    .a2{
+      width: 30%;
+      background-color: red;
+      height: 100%;
+    }
+    .d2{
+      width: 50%;
+      height: 49%;
+      margin: 1px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .a3{
+      width: 50%;
+      height: 100%;
+      background-color: orange;
+    }
+    .a4{
+      width: 49.5%;
+      height: 100%;
+      background-color: orange;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header"></div>
+    <div class="main">
+      <div class="d1">
+        <div class="a1"></div>
+        <div class="a2"></div>
+      </div>
+      <div class="d2">
+        <div class="a3"></div>
+        <div class="a4"></div>
+      </div>
+    </div>
+    <div class="footer"></div>
+  </div>
+</body>
+</html>
